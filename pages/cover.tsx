@@ -6,6 +6,8 @@ import Checksvg from '../public/assests/CheckSvg.svg';
 import { Newsletter } from "@/app/components/Newsletter";
 import { Footer } from "@/app/components/Footer";
 
+
+
 const PaymentPlans = {
   quarterly: [
     { id: 1, amount: 30000.00, plan: "Per Quarter, Per Beneficiary.", header: "Pink Diamond Plan", benefit: "2m", mortuaryExpenses: "90 days", casketType: "Basic casket provided.", tombType: "Basic tomb preparation" , noProff: 4, noDays: 1,  dayType: 1, consult: "Free consultation."},
@@ -24,11 +26,14 @@ const PaymentPlans = {
   ],
 };
 
+const PaymentPlanKeys = ['quarterly', 'biannual', 'annual'] as const;
+type PaymentPlanKey = typeof PaymentPlanKeys[number];
+
 const Cover = () => {
   const [selectedPlan, setSelectedPlan] = useState(PaymentPlans.quarterly);
   const [selectedButton, setSelectedButton] = useState('quarterly');
 
-  const handleButtonClick = (button: SetStateAction<string>) => {
+  const handleButtonClick = (button: PaymentPlanKey) => {
     setSelectedPlan(PaymentPlans[button]);
     setSelectedButton(button);
   };
