@@ -19,24 +19,28 @@ export function Hero() {
         const options = {
             threshold: 0.5,
         };
-
+    
+        const count1Node = count1Ref.current;
+        const count2Node = count2Ref.current;
+        const count3Node = count3Ref.current;
+    
         const handleIntersection = (entries: IntersectionObserverEntry[]) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     if (!hasAnimated) {
-                        const countUp1 = new CountUp(count1Ref.current as HTMLElement, 8000, {
+                        const countUp1 = new CountUp(count1Node as HTMLElement, 8000, {
                             duration: 2,
                             formattingFn: (num) => num.toFixed(0),
                         });
-                        const countUp2 = new CountUp(count2Ref.current as HTMLElement, 2425, { duration: 2 });
-                        const countUp3 = new CountUp(count3Ref.current as HTMLElement, 98, { duration: 2 });
-
+                        const countUp2 = new CountUp(count2Node as HTMLElement, 2425, { duration: 2 });
+                        const countUp3 = new CountUp(count3Node as HTMLElement, 98, { duration: 2 });
+    
                         countUp1.start(() => {
                             setIsCount1Complete(true);
                         });
                         countUp2.start();
                         countUp3.start();
-
+    
                         setHasAnimated(true);
                     }
                 } else {
@@ -45,23 +49,24 @@ export function Hero() {
                 }
             });
         };
-
+    
         const observer = new IntersectionObserver(handleIntersection, options);
-
-        if (count1Ref.current && count2Ref.current && count3Ref.current) {
-            observer.observe(count1Ref.current);
-            observer.observe(count2Ref.current);
-            observer.observe(count3Ref.current);
+    
+        if (count1Node && count2Node && count3Node) {
+            observer.observe(count1Node);
+            observer.observe(count2Node);
+            observer.observe(count3Node);
         }
-
+    
         return () => {
-            if (count1Ref.current && count2Ref.current && count3Ref.current) {
-                observer.unobserve(count1Ref.current);
-                observer.unobserve(count2Ref.current);
-                observer.unobserve(count3Ref.current);
+            if (count1Node && count2Node && count3Node) {
+                observer.unobserve(count1Node);
+                observer.unobserve(count2Node);
+                observer.unobserve(count3Node);
             }
         };
     }, [hasAnimated]);
+    
 
     return (
         <div className="lg:pt-40 pt-16">
