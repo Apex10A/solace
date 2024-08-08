@@ -26,9 +26,9 @@ export function Navbar() {
   return (
     <nav className="lg:fixed top-0 left-0 right-0 flex w-full items-center justify-between px-[20px] py-[14px] lg:mt-[10px] lg:rounded-lg z-50 bg-Fozanova-Black lg:container mx-auto">
       <div className="flex flex-start items-center w-[100%]">
-        <a href="/">
+        <Link href="/">
             <Image className="lg:w-[200px]" width={186} height={42} src={solaceLogo} alt="solaceLogo" />
-        </a>
+        </Link>
 
         <div className="hidden lg:flex items-center  lg:gap-x-[45px] xl:pl-28 lg:pl-10 md:pl-10">
           {navLinks.map((item, index) => (
@@ -56,9 +56,9 @@ export function Navbar() {
 
       <div className={`fixed top-0 left-0 w-64 h-full bg-Fozanova-Black transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out lg:hidden z-20`}>
         <div className="flex justify-end gap-[50px]  p-4">
-            <a href="/">
+            <Link href="/">
               <Image width={130} height={150} src={solaceLogo} alt='solacenavLogo' />
-            </a>
+            </Link>
           <Image width={25} src={Close} alt="CloseBtn" className="cursor-pointer" onClick={toggleMenu} />
         </div>
         <div className="flex flex-col items-start px-8">

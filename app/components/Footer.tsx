@@ -28,9 +28,9 @@ export function Footer() {
             <div className="bg-[#121933] py-[50px] ">
                 <div className="footer-bg pb-[30px] border-b-[1px] max-w-[1280px] mx-auto border-b-[#FFFFFF80]   lg:flex items-center justify-center gap-80">
                     <div>
-                        <a href="/">
+                        <Link href="/">
                             <Image className="mx-auto lg:mx-0" src={solaceLogo} alt="FooterLogo" />
-                        </a>
+                        </Link>
                     </div>
                     <div className=" lg:flex gap-20 items-center">
                         {footerLinks.map((item, index) => (
@@ -70,18 +70,18 @@ export function Footer() {
 
 
                     <div className="flex items-center gap-[15px] justify-center lg:justify-end pt-[10px]">
-                        <a href="/">
+                        <Link href="/">
                             <Image width={13.87} height={16} src={TiktokSvg} alt="tiktoksvg" />
-                        </a>
-                        <a href="/">
+                        </Link>
+                        <Link href="/">
                             <Image width={22.83} height={16} src={YoutubeSvg} alt="youtubesvg" />
-                        </a>
-                        <a href="/">
+                        </Link>
+                        <Link href="/">
                             <Image width={7.47} height={16} src={FacebookSvg} alt="facebookSvg"/>
-                        </a>
-                        <a href="/">
+                        </Link>
+                        <Link href="/">
                             <Image width={16.94} height={16} src={LinkedInSvg} alt="linkedinSvg" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

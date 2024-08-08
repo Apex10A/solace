@@ -1,6 +1,5 @@
 "use client";
 
-
 import { useEffect, useRef, useState } from 'react';
 import Image from "next/image";
 import { CountUp } from 'countup.js';
@@ -9,12 +8,10 @@ import Appstore from '../../public/assests/Appstore.svg';
 import Googlestore from '../../public/assests/googlestore.svg';
 import HeroImg from '../../public/assests/oldwoman.png';
 
-
-
 export function Hero() {
-    const count1Ref = useRef(null);
-    const count2Ref = useRef(null);
-    const count3Ref = useRef(null);
+    const count1Ref = useRef<HTMLSpanElement>(null);
+    const count2Ref = useRef<HTMLSpanElement>(null);
+    const count3Ref = useRef<HTMLSpanElement>(null);
     const [isCount1Complete, setIsCount1Complete] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -23,26 +20,26 @@ export function Hero() {
             threshold: 0.5,
         };
 
-        const handleIntersection = (entries) => {
+        const handleIntersection = (entries: IntersectionObserverEntry[]) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     if (!hasAnimated) {
-                        const countUp1 = new CountUp(count1Ref.current, 8000, {
+                        const countUp1 = new CountUp(count1Ref.current as HTMLElement, 8000, {
                             duration: 2,
                             formattingFn: (num) => num.toFixed(0),
-                            onComplete: () => {
-                                setIsCount1Complete(true);
-                            }
                         });
-                        const countUp2 = new CountUp(count2Ref.current, 2425, { duration: 2 });
-                        const countUp3 = new CountUp(count3Ref.current, 98, { duration: 2 });
-                        if (!countUp1.error) countUp1.start();
-                        if (!countUp2.error) countUp2.start();
-                        if (!countUp3.error) countUp3.start();
+                        const countUp2 = new CountUp(count2Ref.current as HTMLElement, 2425, { duration: 2 });
+                        const countUp3 = new CountUp(count3Ref.current as HTMLElement, 98, { duration: 2 });
+
+                        countUp1.start(() => {
+                            setIsCount1Complete(true);
+                        });
+                        countUp2.start();
+                        countUp3.start();
+
                         setHasAnimated(true);
                     }
                 } else {
-                    // Reset the animation state when the section is not in view
                     setHasAnimated(false);
                     setIsCount1Complete(false);
                 }

@@ -12,6 +12,7 @@ import Teleconsultation from '../../public/assests/Teleconsultation.svg'
 import Holistic from '../../public/assests/Holistic.svg'
 import Tech from '../../public/assests/Tech.svg' 
 import ArrowRightIcon from "./ArrowIconRight"
+import Link from "next/link"
 
 
 
@@ -46,55 +47,55 @@ export function Services() {
                             <Image className="mx-auto" width={39.3} height={37} src={Holistic} alt="HolisticImg" />
                             <h1 className="pt-5 text-center max-w-[262px] text-[28px] font-normal  leading-[32px] text-Fozanova-Black">Healthy Elders Club for Older Adults</h1>
                             <p className="pt-5 text-center max-w-[262px] font-normal text-[17px] leading-[26px] tracking-[-0.4%] text-p-grey">Subscribe self or your elders to enjoy exclusive benefits and privileges at partner pharmacies, hospitals and laboratories Nationwide.</p>
-                            <a href="/">
+                            <Link href="/">
                                 <button className="flex items-center gap-[5px] pt-3 text-[17px] font-semibold leading-[24px] text-Fozanova-gold">
                                     See pricing
 
                                     <ArrowRightIcon className="text-[#DBA73B]" />
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                         <div className="lg:border-l-[1px] border-l-[#EFF0F6]  lg:pl-8 flex flex-col justify-center items-center">
                             <Image className="mx-auto" width={40.86} height={37} src={Wellness} alt="wellnessImg" />
                             <h1 className="pt-5 text-center max-w-[262px] text-[28px] font-normal  leading-[32px] text-Fozanova-Black">Personalized Wellness Plan for the Elderly </h1>
                             <p className="pt-5 text-center max-w-[262px] font-normal text-[17px] leading-[26px] tracking-[-0.4%] text-p-grey">Enjoy personalized elderly wellness plans which include doctor check-ins, exercise, diet, counseling for holistic care.</p>
-                            <a href="/">
+                            <Link href="/">
                                 <button className="pt-3 text-[17px] font-semibold leading-[24px] text-Fozanova-gold">
                                     Starting Soon
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                         <div className="lg:border-r-[1px] border-r-[#EFF0F6]  lg:pr-8 flex flex-col justify-center items-center">
                             <Image className="mx-auto" width={37.04} height={37} src={Tech} alt="TechImg" />
                             <h1 className="pt-5 text-center max-w-[262px] text-[28px] font-normal  leading-[32px] text-Fozanova-Black">Lace AI Proactive Care Solution</h1>
                             <p className="pt-5 text-center max-w-[262px] font-normal text-[17px] leading-[26px] tracking-[-0.4%] text-p-grey">Lace AI monitors elders' health, offers insights & facilitates communication for total well-being in real-time.</p>
-                            <a href="/lace-ai">
+                            <Link href="/lace-ai">
                                 <button className="flex items-center gap-[5px] pt-3 text-[17px] font-semibold leading-[24px] text-Fozanova-gold">
                                     Learn More
 
                                     <ArrowRightIcon className="text-[#DBA73B]" />
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                         <div className="flex flex-col justify-center items-center">
                             <Image className="mx-auto" width={35.78} height={36.03} src={Holistic} alt="HolisticImg" />
                             <h1 className="pt-5 text-center max-w-[262px] text-[28px] font-normal  leading-[32px] text-Fozanova-Black">Personal Elderly Care Services</h1>
                             <p className="pt-5 text-center max-w-[262px] font-normal text-[17px] leading-[26px] tracking-[-0.4%] text-p-grey">Our qualified nurses and  caregivers offer round-the-clock companionship and personal care services.</p>
-                            <a href="/">
+                            <Link href="/">
                                 <button className="pt-3 text-[17px] font-semibold leading-[24px] text-Fozanova-gold">
                                     Starting Soon
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                         <div className="lg:border-l-[1px] border-l-[#EFF0F6]  lg:pl-8 flex flex-col justify-center items-center">
                             <Image className="mx-auto" width={37} height={37} src={Teleconsultation} alt="teleconsultationImg" />
                             <h1 className="pt-5 text-center max-w-[262px] text-[28px] font-normal  leading-[32px] text-Fozanova-Black">Teleconsultation Services </h1>
                             <p className="pt-5 text-center max-w-[262px] font-normal text-[17px] leading-[26px] tracking-[-0.4%] text-p-grey">Receive high-quality video medical consultations from global experts across diverse medical specialties instantly.</p>
-                            <a href="/">
+                            <Link href="/">
                                 <button className="pt-3 text-[17px] font-semibold leading-[24px] text-Fozanova-gold">
                                     Starting Soon
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

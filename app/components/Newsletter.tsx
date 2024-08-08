@@ -3,6 +3,7 @@ import Image from "next/image"
 import NewsletterEmail from '../../public/assests/NewsletterEmail.svg'
 import AppstoreSvg from '../../public/assests/Appstore.svg'
 import GoogleStoreSvg from '../../public/assests/googlestore.svg'
+import Link from "next/link"
 
 
 
@@ -14,7 +15,7 @@ export function Newsletter() {
                     <Image width={89.4} height={86.32} src={NewsletterEmail} alt="newsletterEmail" />
                 </div>
 
-                <h1 className="pt-[20px] font-normal lg:text-[48px] text-[40px] lg:leading-[58px] leading-[50px] tracking-[-1px] max-w-[633px] text-center text-Fazanova-white">Let's help you enjoy your elderhood!</h1>
+                <h1 className="pt-[20px] font-normal lg:text-[48px] text-[40px] lg:leading-[58px] leading-[50px] tracking-[-1px] max-w-[633px] text-center text-Fazanova-white">Let&apos;s help you enjoy your elderhood!</h1>
 
                 <p className="pt-[15px] font-normal lg:text-[17px] text-[15px] lg:leading-[26px] leading-[22px] tracking-[-0.4%] max-w-[410.12px] text-Fazanova-white text-center">Stay in the loop with updates from our team and community. Once a week.</p>
 
@@ -26,25 +27,25 @@ export function Newsletter() {
                         <span className="font-normal text-[14px] leading-[20px] text-Fazanova-white">Subscribe to our newsletter</span>
                     </div>
 
-                    <a href="" className="mx-auto lg:mx-0">
+                    <Link href="" className="mx-auto lg:mx-0">
                         <button className="mx-auto lg:mx-0 bg-Fozanova-gold w-[116px] rounded-[6px] lg:text-[17px] leading-[24px] font-semibold  text-Fazanova-white py-[8px] px-[16px]">
                             Subscribe
                         </button>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="hidden lg:flex gap-[17.82px] pt-[20px]">
-                    <a href="/">
+                    <Link href="/">
                         <button>
                             <Image width={169.82} height={63.84} src={AppstoreSvg} alt="appStoreSvg" />
                         </button>
-                    </a>
+                    </Link>
 
-                    <a href="/">
+                    <Link href="/">
                         <button>
                             <Image width={169.71} height={63.67} src={GoogleStoreSvg} alt="googleStoreSvg" />
                         </button>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

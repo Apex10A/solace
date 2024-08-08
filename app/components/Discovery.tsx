@@ -36,7 +36,7 @@ export function Discovery() {
                         <div className="pt-[10px]">
                             <h1 className="font-bold  lg:text-[24px] text-[22px] leading-[36px] text-center text-Fozanova-Black max-w-[271px] mx-auto">Cutting-Edge Tech Infrastructure </h1>
                             <p className="mt-[20px] max-w-[271px] text-center lg:text-[17px] text-[15px]   text-p-grey font-normal mx-auto">
-                                Because it doesn't exist, we are building the most advanced tech infrastructure that will drive the provision of world-class holistic care for the elderly in Africa.
+                                Because it doesnIt&#39;st exist, we are building the most advanced tech infrastructure that will drive the provision of world-class holistic care for the elderly in Africa.
                             </p>
                         </div>
                     </div>
