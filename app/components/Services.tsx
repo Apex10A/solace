@@ -34,7 +34,7 @@ export function Services() {
                         <div className="lg:border-r-[1px] border-r-[#EFF0F6]  lg:pr-8  flex flex-col justify-center items-center">
                             <Image className="mx-auto" width={32.58} height={36} src={SolacePremium} alt="SolacePremium" />
                             <h1 className="pt-5 text-center max-w-[262px] lg:text-[28px] text-[24px] font-normal  lg:leading-[32px] leading-[30px] text-Fozanova-Black">Solace Premium Farewell Cover </h1>
-                            <p className="pt-5 text-center max-w-[262px] font-normal lg:text-[17px] text-[15px] lg:leading-[26px] leading-[22px]  tracking-[-0.4%] text-p-grey">Solace Farewell Cover provides funeral expense coverage for self or subscribers' loved ones in the event of their passing.</p>
+                            <p className="pt-5 text-center max-w-[262px] font-normal lg:text-[17px] text-[15px] lg:leading-[26px] leading-[22px]  tracking-[-0.4%] text-p-grey">Solace Farewell Cover provides funeral expense coverage for self or subscribers&apos; loved ones in the event of their passing.</p>
                             <a href="/">
                                 <button className="flex items-center gap-[5px] pt-3 lg:text-[17px] text-[15px] font-semibold lg:leading-[24px] leading-[22px] text-Fozanova-gold">
                                     See pricing
@@ -68,7 +68,7 @@ export function Services() {
                         <div className="lg:border-r-[1px] border-r-[#EFF0F6]  lg:pr-8 flex flex-col justify-center items-center">
                             <Image className="mx-auto" width={37.04} height={37} src={Tech} alt="TechImg" />
                             <h1 className="pt-5 text-center max-w-[262px] text-[28px] font-normal  leading-[32px] text-Fozanova-Black">Lace AI Proactive Care Solution</h1>
-                            <p className="pt-5 text-center max-w-[262px] font-normal text-[17px] leading-[26px] tracking-[-0.4%] text-p-grey">Lace AI monitors elders' health, offers insights & facilitates communication for total well-being in real-time.</p>
+                            <p className="pt-5 text-center max-w-[262px] font-normal text-[17px] leading-[26px] tracking-[-0.4%] text-p-grey">Lace AI monitors elders&apos; health, offers insights & facilitates communication for total well-being in real-time.</p>
                             <Link href="/lace-ai">
                                 <button className="flex items-center gap-[5px] pt-3 text-[17px] font-semibold leading-[24px] text-Fozanova-gold">
                                     Learn More
